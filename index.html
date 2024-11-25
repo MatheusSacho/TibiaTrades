@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TibiaTrade</title>
+    <link rel="stylesheet" href="./src/style/reset.css" />
+    <link rel="stylesheet" href="./src/style/main.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <nav aria-label="Lista de servidores">
+          <h2 id="lista">
+            Lista de Servidores <span class="seta">&#9662;</span>
+          </h2>
+          <div class="dropdown">
+            <select name="listaServer" class="server-select" id="server-select">
+              <option value="" disabled selected>Escolha o servidor</option>
+              <option value="https://www.pkmdoido.com.br/jogar.php">
+                PKMD
+              </option>
+            </select>
+          </div>
+        </nav>
+      </section>
+      <section>
+        <menu class="menu-icon" alt="icone-menu"> </menu>
+      </section>
+      <section>
+        <div class="menu-container">
+          <menu class="menu-icon" alt="icone-menu"> </menu>
+          <ul class="menu-list">
+            <li>Home</li>
+            <li>Sobre</li>
+            <li>Serviços</li>
+            <li>Contato</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <form class="login">
+          <div>
+            <h2>Login</h2>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Digite seu email"
+              required
+            />
+          </div>
+          <div>
+            <label for="password">Senha:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Digite sua senha"
+              required
+            />
+          </div>
+          <button type="submit">Entrar</button>
+        </form>
+      </section>
+    </main>
+    <script src="./src/scripts/engine.js" defer></script>
+  </body>
+</html>

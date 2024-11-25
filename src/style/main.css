@@ -1,0 +1,135 @@
+body {
+  background-image: url("../images/MachampDoido1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#lista {
+  color: rgb(208, 197, 240);
+  text-shadow: 2px 2px 4px rgba(233, 6, 6, 0.5);
+}
+
+.menu-icon {
+  background-image: url("../images/Menu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px; /* Ajusta o tamanho do ícone */
+  height: 30px; /* Mantém as proporções do ícone */
+  position: absolute; /* Permite posicionamento em relação ao elemento pai */
+  top: 10px; /* Distância do topo da página */
+  right: 10px; /* Distância da borda direita */
+  z-index: 10; /* Garante que fique sobre outros elementos */
+}
+.menu-icon {
+  font-size: 40px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.menu-icon:hover {
+  color: #007bff; /* Muda a cor */
+  transform: scale(1.2); /* Aumenta o tamanho */
+}
+.menu-list {
+  display: none;
+  position: sticky;
+  top: 50px;
+  left: 0;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.menu-container:hover .menu-list {
+  display: block;
+}
+
+.menu-list li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.menu-list li:hover {
+  background-color: #ddd;
+}
+.login {
+  border: 1px solid red;
+  margin-left: 15px;
+  margin-top: 15px;
+  width: 380px;
+  height: 380px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background: linear-gradient(
+    325deg,
+    #03001e 0%,
+    #7303c0 30%,
+    #ec38bc 70%,
+    #fdeff9 100%
+  );
+}
+
+#lo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+#pass {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+#lista {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Estilo para a seta */
+.seta {
+  font-size: 1.5rem;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Quando a seta estiver para baixo */
+#server-select:focus + .dropdown .seta {
+  transform: rotate(-180deg);
+}
+
+/* Inicialmente, esconder o select */
+.server-select {
+  display: none;
+  margin-top: 10px;
+}
+
+/* Mostrar o select quando a seta for clicada (essa lógica será controlada no JS) */
+.dropdown.open .server-select {
+  display: block;
+}
+
+/* Estilização do dropdown (pode ser ajustado conforme seu gosto) */
+.dropdown {
+  position: relative;
+}
+
+/* Para o botão de login, manter a estilização normal */
+form {
+  margin-top: 20px;
+}
+
+input,
+button {
+  padding: 10px;
+  font-size: 1rem;
+  margin: 10px 0;
+}
